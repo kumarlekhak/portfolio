@@ -7,69 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
   </script>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="circle.css">
-
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <style type="text/css">
-  body {
-  /*background-color: #f5f5f5;*/
-  margin: 0;
-  padding: 0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
-  .page {
-    margin: 40px;
-  }
-  h1 {
-    margin: 40px 0 60px 0;
-  }
-  .dark-area {
-    background-color: #666;
-    padding: 40px;
-    margin: 0 -40px 20px -40px;
-    clear: both;
-  }
-  .clearfix:before,
-  .clearfix:after {
-    content: " ";
-    display: table;
-  }
-  .clearfix:after {
-    clear: both;
-  }
-  .clearfix {
-    *zoom: 1;
-  }
+    body {
+          /*background-color: #f5f5f5;*/
+          margin: 0;
+          padding: 0;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          }
+          .page {
+            margin: 40px;
+          }
+          h1 {
+            margin: 40px 0 60px 0;
+          }
+          .dark-area {
+            background-color: #666;
+            padding: 40px;
+            margin: 0 -40px 20px -40px;
+            clear: both;
+          }
+          .clearfix:before,
+          .clearfix:after {
+            content: " ";
+            display: table;
+          }
+          .clearfix:after {
+            clear: both;
+          }
+          .clearfix {
+            *zoom: 1;
+          }
   </style>
 </head>
 
 <body>
   <div class="banner">
     <div class="row intro" style="margin: 0 auto;">
-      <div class="col-md-5">
+      <div class="col-md-5 col-sm-12 col-xs-12 face-style">
         <img class="pic flip wow" data-wow-delay="1s" src="images/1.png" alt="" />
       </div>
-      <div class="col-md-5 name">
+      <div class="col-md-5 col-sm-12 col-xs-12 name">
         <h1 class="wow zoomInUp">KUMAR <span>LEKHAK</span></h1>
         <div class="border"></div>
-        <h2 class="wow zoomInDown" >UI DEVELOPER</h2>
+        <h2 class="wow zoomInDown">UI DEVELOPER</h2>
       </div>
     </div>
   </div>
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
-    <div class="container">
+  <div class="navbar navbar-inverse navbar-fixed-top hidden-xs" role="navigation" id="slide-nav">
+    <div class="container-fluid" style="padding: 0;">
       <div class="navbar-header">
         <a class="navbar-toggle"> <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -87,21 +84,26 @@
           </li>
           <li><a href="#about"><span class="labels">about</span></a>
           </li>
-          <li><a href="#services"><span class="labels">services</span></a>
+          <li><a href="#services"><span class="labels">skills</span></a>
           </li>
-          <li><a href="#portfolio"><span class="labels">portfolio</span></a>
+          <li><a href="#portfolio"><span class="labels">education</span></a>
           </li>
-          <li><a href="#testimonial"><span class="labels">Testimonial</span></a>
+          <li><a href="#testimonial"><span class="labels">work</span></a>
           </li>
-          <li><a href="#blog"><span class="labels">blog</span></a>
+          <li><a href="#blog"><span class="labels">services</span></a>
           </li>
-          <li><a href="#contact"><span class="labels">Contact</span></a>
+          <li><a href="#contact"><span class="labels">portfolio</span></a>
+          </li>
+          <li><a href="#contact"><span class="labels">blog</span></a>
+          </li>
+          <li><a href="#contact"><span class="labels">contact</span></a>
           </li>
           <div class="clearfix"></div>
         </ul>
       </div>
     </div>
   </div>
+  <!-- about -->
   <div class="container">
     <div class="about text-center">
       <h3 id="about" class="wow flipInX" data-wow-duration="2s" data-wow-delay="0.5s">ABOUT ME</h3>
@@ -109,16 +111,16 @@
         <img src="images/about.png" alt="kumarlekhak">
       </div> -->
       <div class="row about-pad">
-        <div class="col-md-6">
-          <h4 class="about-text wow bounceIn" data-wow-delay="1s" >Hi. I’m Kumar Lekhak, <br>a UI developer from Bangalore, India. Please take a look around!</h4>
+        <div class="col-md-6 col-xs-12">
+          <h4 class="about-text wow bounceIn" data-wow-delay="1s">Hi. I’m Kumar Lekhak, a UI developer from Bangalore, India. Please take a look around!</h4>
         </div>
-        <div class="col-md-6">
-          <h4 class="about-text about-text2 wow fadeInLeft" data-wow-delay="1s" >I enjoy taking complex problems and turning them into simple and beautiful interactive designs. I also love the logic and structure of coding and always try to write elegant and efficient code, whether it be HTML, CSS, JavaScript, Angular or anyother trending cutting-edge technologies. <br><br>When I'm not coding or pushing pixels, you'll find me either eating or meditating; else hitting the gym.
+        <div class="col-md-6 col-xs-12">
+          <h4 class="about-text about-text2 wow fadeInLeft" data-wow-delay="1s">I enjoy taking complex problems and turning them into simple and beautiful interactive designs. I also love the logic and structure of coding and always try to write elegant and efficient code, whether it be HTML, CSS, JavaScript, Angular or anyother trending cutting-edge technologies. <br><br>When I'm not coding or pushing pixels, you'll find me either eating or meditating; else hitting the gym.
          </h4>
         </div>
       </div>
       <!-- <p>To pursue a progressive career and be a part of progressive organisation that gives scope to enhance my wit and utilise my skills towards the excellent growth of the company.</p> -->
-      <ul>
+      <ul class="socio-icons">
         <li>
           <a class="fb" href="https://www.facebook.com/kumar.lekhak.1" target="_blank"></a>
         </li>
@@ -135,17 +137,18 @@
     </div>
   </div>
   <div class="about-back"></div>
+  <!-- skills me -->
   <div class="my-skills">
     <div class="container">
       <div class="skills text-center">
         <h3 id="skills" class="wow flipInX" data-wow-duration="2s" data-wow-delay="0.5s">SKILLS ME</h3>
-       <!--  <div class="strip-line text-center" style="background-color: #fff;">
+        <!--  <div class="strip-line text-center" style="background-color: #fff;">
          <!--  <img src="images/skill.png" alt="kumarlekhak">
-        </div> --> 
+        </div> -->
         <div class="page">
           <!-- default -->
           <div class="clearfix">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p90 wow zoomInDown" data-wow-delay="1s"> <span>90%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -154,7 +157,7 @@
               </div>
               <h4 class="skill wow zoomIn" data-wow-delay="1s">HTML 5</h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p85  wow zoomInDown" data-wow-delay="1s"> <span>85%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -163,7 +166,7 @@
               </div>
               <h4 class="skill wow zoomIn" data-wow-delay="1s">CSS 3</h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p70 wow zoomInDown" data-wow-delay="1s"> <span>70%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -172,7 +175,7 @@
               </div>
               <h4 class="skill wow zoomIn" data-wow-delay="1s">JAVASCRIPT</h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p80 wow zoomInDown" data-wow-delay="1s"> <span>80%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -181,7 +184,7 @@
               </div>
               <h4 class="skill wow zoomIn" data-wow-delay="1s">BOOTSTRAP</h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p60 wow zoomInDown" data-wow-delay="1s"> <span>60%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -190,7 +193,7 @@
               </div>
               <h4 class="skill wow zoomIn" data-wow-delay="1s">ANGULAR</h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col-xs-12 skill-sec">
               <div class="c100 p65 wow zoomInDown" data-wow-delay="1s"> <span>65%</span>
                 <div class="slice">
                   <div class="bar"></div>
@@ -208,7 +211,7 @@
   </div>
   <div class="my-skill-back"></div>
   <!-- EDUCATION SECTION BEGINS -->
-  <div class="education">
+  <div class="education-sec">
     <div class="container">
       <div class="edu text-center">
         <h3 id="edu" class="wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">EDUCATION</h3>
@@ -216,7 +219,7 @@
           <img src="images/edu.png" alt="kumarlekhak">
         </div> -->
         <div class="row edu-grids">
-          <div class="col-md-4 wow flipInY" data-wow-delay="1s">
+          <div class="col-md-4 col-xs-12 wow flipInY" data-wow-delay="1s">
             <p>2010</p> <span>Graduated</span>
             <img src="images/arrow.png" alt="kumarlekhak">
             <div class="edu-border">
@@ -229,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 wow flipInY" data-wow-delay="1s">
+          <div class="col-md-4 col-xs-12 education wow flipInY" data-wow-delay="1s">
             <p>2012</p> <span>Graduated</span>
             <img src="images/arrow.png" alt="kumarlekhak">
             <div class="edu-border">
@@ -242,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 wow flipInY" data-wow-delay="1s">
+          <div class="col-md-4 col-xs-12 education wow flipInY" data-wow-delay="1s">
             <p>2016</p> <span>Graduated</span>
             <img src="images/arrow.png" alt="kumarlekhak">
             <div class="edu-border">
@@ -264,7 +267,6 @@
   <div class="parallax-window2" data-parallax="scroll" data-image-src="nebula.jpg">
     <h3 id="parallax2-title">Love to make things that make a difference</h3>
   </div>
-
   <div class="strip-border">
     <p></p>
   </div>
@@ -272,13 +274,13 @@
   <div class="work">
     <div class="container">
       <div class="work text-center">
-        <h3 id="edu" class="wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">WORK EXPERIENCE</h3>
-      <!--   <div class="strip text-center">
+        <h3 id="work" class="wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s">WORK EXPERIENCE</h3>
+        <!--   <div class="strip text-center">
           <img src="images/work.png" alt="kumarlekhak">
         </div> -->
         <div class="row edu-grids">
           <div class="col-md-2"></div>
-          <div class="col-md-4 wow flipInY" data-wow-delay="1s">
+          <div class="col-md-4 col-xs-12 wow flipInY" data-wow-delay="1s">
             <p style="background-color: #4ad7b4;">2016-2017</p>
             <img src="images/arrow.png" alt="kumarlekhak">
             <div class="edu-border">
@@ -291,7 +293,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 wow flipInY" data-wow-delay="1s">
+          <div class="col-md-4 col-xs-12 education wow flipInY" data-wow-delay="1s">
             <p style="background-color: #4ad7b4;">2017</p>
             <img src="images/arrow.png" alt="kumarlekhak">
             <div class="edu-border">
@@ -311,34 +313,34 @@
     </div>
   </div>
   <!-- WORK EXPERIENCE ENDS -->
-   <div class="parallax-window2" data-parallax="scroll" data-image-src="nebula.jpg">
+  <div class="parallax-window2" data-parallax="scroll" data-image-src="nebula.jpg">
     <h3 id="parallax2-title">Who's that man? an Idiot or an avid developer!</h3>
   </div>
   <!-- SERVICES BEGINS -->
   <div class="services">
     <div class="container">
       <div class="services text-center">
-        <h3 id="edu" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">SERVICES</h3>
+        <h3 id="serv" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">SERVICES</h3>
         <!-- <div class="strip text-center">
           <img src="images/ser.png" alt="kumarlekhak">
         </div> -->
         <div class="ser-grids">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="ser-image wow zoomInDown" data-wow-delay="1s"></div>
             <h3 class="wow zoomIn">Web Developer</h3>
             <p class="wow zoomIn">Kick-ass web developer with extreme expertise in cutting-edge front end User Interface technologies.</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6" id="serv">
             <div class="ser-image wow zoomInDown" data-wow-delay="1s"></div>
             <h3 class="wow zoomIn">English Tutor</h3>
             <p class="wow zoomIn">Avid Engish tutor with supreme command on the language over years. Available on Youtube and UrbanPro.</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6 education" id="serv">
             <div class="ser-image wow zoomInDown" data-wow-delay="1s"></div>
             <h3 class="wow zoomIn">Impersonator</h3>
             <p class="wow zoomIn">Dive into soul kind of person. State level awardee for enacting as Chief Minister in collegiate skit.</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6 education" id="serv">
             <div class="ser-image wow zoomInDown" data-wow-delay="1s"></div>
             <h3 class="wow zoomIn">Blogger</h3>
             <p class="wow zoomIn">Author by birth as the name says. Tech-trends and motivational incidents flow into my blogs on frequetly.</p>
@@ -355,67 +357,61 @@
       <div class="container">
         <div class="port text-center">
           <h3 id="port" style="color: #fff;" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">PORTFOLIO</h3>
-
-           <p class="wow fadeIn" data-wow-duration="3s">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+          <p class="wow fadeIn" data-wow-duration="3s">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
           <div class="container">
             <div class="cards">
               <div class="row">
-
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6" id="proj">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 education" id="proj">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
+                </div>
+<!--               </div>
+              <div class="row port2-row" id="proj"> -->
+                <div class="col-md-4 col-sm-6 education education2">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 education education2" id="proj">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 education education2" id="proj">
+                  <div class="card-image wow flipInY" data-wow-delay="1s">
+                    <img src="images/an.png" class="img-responsive" alt="">
+                    <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto; text-align: center; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                      <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                  <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
-                </div>               
-              </div>
-            </div>
-
-            <div class="row" style="margin-top: 4em;">
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
-                  </p>
-                </div>
-              </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -434,42 +430,42 @@
           <img src="images/pro.png" alt="kumarlekhak">
         </div> -->
         <div class="process-girds">
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imagea"></div>
               <p>IDEA</p>
               <img src="images/6.png" alt="" />
             </div>
           </div>
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="1.2s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft" data-wow-duration="1.2s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imageb"></div>
               <p>CONCEPT</p>
               <img class="pro-imga" src="images/6.png" alt="" />
             </div>
           </div>
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="1.4s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft" data-wow-duration="1.4s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imagec"></div>
               <p>DESIGN</p>
               <img class="pro-img" src="images/6.png" alt="" />
             </div>
           </div>
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="1.6s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft education" data-wow-duration="1.6s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imaged"></div>
               <p>DEVELOP</p>
               <img class="pro-imgb" src="images/6.png" alt="" />
             </div>
           </div>
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="1.8s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft education" data-wow-duration="1.8s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imagee"></div>
               <p>TEST</p>
               <img src="images/6.png" alt="" />
             </div>
           </div>
-          <div class="col-md-2 process-pad wow zoomInLeft" data-wow-duration="2s" data-wow-delay="1s">
+          <div class="col-md-2 col-sm-4 col-xs-12 process-pad wow zoomInLeft education" data-wow-duration="2s" data-wow-delay="1s">
             <div class="process-gird">
               <div class="process-imagef"></div>
               <p>LAUNCH</p>
@@ -482,62 +478,57 @@
   </div>
   <!-- PROCESS ENDS -->
   <div class="process-back"></div>
-
-      <div class="port">
-      <div class="container">
-        <div class="port text-center">
-          <h3 id="port" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">BLOGS</h3>
-         <!--  <div class="strip text-center">
+  <!-- blogs -->
+    <div class="port">
+    <div class="container">
+      <div class="port text-center">
+        <h3 id="port" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">BLOGS</h3>
+        <!--  <div class="strip text-center">
             <img src="images/port.png" alt=" " />
           </div> -->
-          <p style="color: #000;" class="wow fadeIn" data-wow-duration="3s">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-          <div class="container">
-            <div class="cards">
-
+        <p style="color: #000;" class="wow fadeIn" data-wow-duration="3s">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+        <div class="container">
+          <div class="cards">
             <div class="row" style="margin-top: 4em;">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                  <img src="images/an.png" class="img-responsive" alt="">
+                  <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                    <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
                   </p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6" id="proj">
                 <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                  <img src="images/an.png" class="img-responsive" alt="">
+                  <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                    <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
                   </p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 proj2" id="proj">
                 <div class="card-image wow flipInY" data-wow-delay="1s">
-                  <img src="images/pn.jpg" alt="">
-                   <p  style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000;">
-                    <span class="project-title">BOX-APPETIT</span><br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
+                  <img src="images/an.png" class="img-responsive" alt="">
+                  <p style="padding: 11px 32px;background-color: #fff;margin: 0 auto;color: #000;margin: 0 auto;border:1px solid #000; text-align: center;"> <span class="project-title">BOX-APPETIT</span>
+                    <br><span class="project-desc">It's an international project based-out of UK. An e-commerce website targetting daily cookery users.</span>
                   </p>
                 </div>
-              </div>
-              </div>
-
-           
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- blogs ends -->
   <!--contact-->
-  <div class="contact">
+      <div class="contact">
     <div class="container">
       <div class="contact text-center">
         <h3 id="edu">CONTACT</h3>
-<!--         <div class="strip-line text-center">
+        <!--         <div class="strip-line text-center">
           <img src="images/con1.png" alt=" " />
-        </div> -->
-      </div>
+        </div> --></div>
       <div class="contact-grids">
         <div class="col-md-5 contact-left">
           <h3>Say Hi to Me</h3>
@@ -550,7 +541,7 @@
             <li>9916705789</li>
             <li><a href="mailto:kumarlekhak666@gmail.com">kumarlekhak666@gmail.com</a>
             </li>
-            <li><a href="#">www.kumarlekhak.com</a>
+            <li><a href="#">www.kumarlekhak.tk</a>
             </li>
           </ul>
         </div>
@@ -578,7 +569,7 @@
           <img class="wow fadeInDown" data-wow-delay="1s" src="images/down.png" alt=" " />
         </a>
       </div>
-      <div class="down wow tada" data-wow-delay="1s"><a href="resume/Updated-resume.pdf" target="_blank">Download My Resume</a>
+      <div class="down wow tada" data-wow-delay="1s"><a href="resume/updated-resume.pdf" target="_blank">Download My Resume</a>
       </div>
     </div>
   </div>
@@ -586,62 +577,63 @@
   <!--footer-->
   <div class="footer">
     <div class="container">
-      <p style="float: left;margin-top: 7px;">Copyright &copy; 2018 Kumar Lekhak.</p>
-      <p style="float: right;">Website upgrading to 
-        <span>
-        <img class="wow infinite bounceIn" style="width: 40px; height: auto;" src="images/angular.png" alt="Angular">
-      </span> soon...</p>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <p style="float: left;margin-top: 7px;">Copyright &copy; 2018 Kumar Lekhak.</p>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <p style="float: right;">Website upgrading to <span>
+          <img class="wow infinite bounceIn" style="width: 40px; height: auto;" src="images/angular.png" alt="Angular">
+          </span> soon...
+        </p>
+      </div>
     </div>
   </div>
   <!--//footer-->
   <script type="text/javascript">
     4$(document).ready(function () {
-      //stick in the fixed 100% height behind the navbar but don't wrap it
-      $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
-      $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));
-      // Enter your ids or classes
-      var toggler = '.navbar-toggle';
-      var pagewrapper = '#page-content';
-      var navigationwrapper = '.navbar-header';
-      var menuwidth = '100%'; // the menu inside the slide menu itself
-      var slidewidth = '80%';
-      var menuneg = '-100%';
-      var slideneg = '-80%';
-      $("#slide-nav").on("click", toggler, function (e) {
-        var selected = $(this).hasClass('slide-active');
-        $('#slidemenu').stop().animate({
-          left: selected ? menuneg : '0px'
-        });
-        $('#navbar-height-col').stop().animate({
-          left: selected ? slideneg : '0px'
-        });
-        $(pagewrapper).stop().animate({
-          left: selected ? '0px' : slidewidth
-        });
-        $(navigationwrapper).stop().animate({
-          left: selected ? '0px' : slidewidth
-        });
-        $(this).toggleClass('slide-active', !selected);
-        $('#slidemenu').toggleClass('slide-active');
-        $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
-      });
-      var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
-      $(window).on("resize", function () {
-        if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
-          $(selected).removeClass('slide-active');
-        }
-      });
-    });
+              //stick in the fixed 100% height behind the navbar but don't wrap it
+              $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
+              $('#slide-nav.navbar-default').after($('<div id="navbar-height-col"></div>'));
+              // Enter your ids or classes
+              var toggler = '.navbar-toggle';
+              var pagewrapper = '#page-content';
+              var navigationwrapper = '.navbar-header';
+              var menuwidth = '100%'; // the menu inside the slide menu itself
+              var slidewidth = '80%';
+              var menuneg = '-100%';
+              var slideneg = '-80%';
+              $("#slide-nav").on("click", toggler, function (e) {
+                var selected = $(this).hasClass('slide-active');
+                $('#slidemenu').stop().animate({
+                  left: selected ? menuneg : '0px'
+                });
+                $('#navbar-height-col').stop().animate({
+                  left: selected ? slideneg : '0px'
+                });
+                $(pagewrapper).stop().animate({
+                  left: selected ? '0px' : slidewidth
+                });
+                $(navigationwrapper).stop().animate({
+                  left: selected ? '0px' : slidewidth
+                });
+                $(this).toggleClass('slide-active', !selected);
+                $('#slidemenu').toggleClass('slide-active');
+                $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+              });
+              var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+              $(window).on("resize", function () {
+                if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+                  $(selected).removeClass('slide-active');
+                }
+              });
+            });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="parallax/parallax.js"></script>
-  
   <script src="wow.min.js"></script>
-  
   <script>
     new WOW().init();
   </script>
-
 </body>
 
 </html>
